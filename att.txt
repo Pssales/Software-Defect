@@ -1,0 +1,79 @@
+COMPLEXIDADE CICLOMÁTICA é uma medida da complexidade da estrutura de decisão de um programa ou módulo. Ele mede os caminhos independentes lineares que devem ser testados. O número mínimo de COMPLEXIDADE CICLOMÁTICA é sempre 1 significando que um módulo ou programa contém no mínimo 1 fluxo de programa ou estrutura de decisão para executar o programa. 
+
+A COMPLEXIDADE DE DESIGN é uma medida essencial de McCabe. Tal como a COMPLEXIDADE DE DESIGN DO módulo é calculada para reduzir o gráfico de fluxo do módulo. É usado para medir a lógica de decisão que controla chamadas para sub-rotinas [56]. Ele mede a lógica de decisão dos módulos e identifica os módulos gerenciais que indicam o projeto de confiabilidade, integração e testabilidade [57].
+
+A COMPLEXIDADE ESSENCIAL é usada para medir construções não estruturadas. Em outras palavras, mede a “estruturação” da lógica de decisão de um módulo de software. Ele é aplicado em código escrito que começa de 1 a v com base na lógica de decisão não estruturada [58]. É usado para prever o esforço de manutenção que ajuda no processo de modularização [59]. O primeiro módulo do conjunto de dados JM1 contém 3 COMPLEXIDADE DE DESIGN e 1 COMPLEXIDADE ESSENCIAL.
+
+
+
+
+
+
+
+3.1 Duração do programa (N)
+O comprimento do programa (N) é a soma do número total de operadores e operandos no programa: 
+        N = N1 + N2
+
+3.2 Tamanho do vocabulário (n)
+O tamanho do vocabulário (n) é a soma do número de operadores e operandos exclusivos : 
+        n = n1 + n2
+
+3.3 Volume do programa (V)
+O volume do programa (V) é o conteúdo informacional do programa, medido em bits matemáticos. É calculado como o comprimento do programa multiplicado pelo logaritmo de 2 bases do tamanho do vocabulário (n) : 
+        V = N * log2 (n) 
+
+O volume de Halstead (V) descreve o tamanho da implementação de um algoritmo. O cálculo de V é baseado no número de operações realizadas e operandos manipulados no algoritmo. Portanto, V é menos sensível ao layout de código do que as medidas de linhas de código. 
+
+O volume de uma função deve ser pelo menos 20 e, no máximo, 1000. O volume de uma função de uma linha sem parâmetros que não é vazia; é cerca de 20. Um volume maior que 1000 indica que a função provavelmente faz muitas coisas.
+
+O volume de um arquivo deve ser de pelo menos 100 e no máximo 8000. Esses limites são baseados em volumes medidos para arquivos com LOCpro e v (G) próximos aos limites recomendados. Os limites de volume podem ser usados ​​para verificação dupla.
+
+
+
+3.4 Nível de dificuldade (D)
+O nível de dificuldade ou a propensão para erros (D) do programa é proporcional ao número de operadores únicos no programa. 
+D também é proporcional à relação entre o número total de operandos e o número de operandos únicos (ou seja, se os mesmos operandos são usados ​​muitas vezes no programa, é mais propenso a erros). 
+        D = (n1 / 2) * (N2 / n2)
+
+3.5 Nível do programa (L)
+O nível do programa (L) é o inverso da propensão para erros do programa. 
+Ou seja, um programa de baixo nível é mais propenso a erros do que um programa de alto nível. 
+        L = 1 / D
+
+3.6 Esforço para implementar (E)
+O esforço para implementar (E) ou entender um programa é proporcional ao volume e ao nível de dificuldade do programa. 
+        E = V * D
+
+3.7 Hora de implementar (T)
+O tempo para implementar ou entender um programa (T) é proporcional ao esforço . Experimentos empíricos podem ser usados ​​para calibrar essa quantidade. Halstead descobriu que dividir o esforço por 18 dá uma aproximação para o tempo em segundos.
+        T = E / 18
+
+
+3.8 Número de erros entregues (B)
+O número de erros entregues (B) está correlacionado com a complexidade geral do software. 
+Halstead dá a seguinte fórmula para B: 
+        B = (E ** (2/3)) / 3000 ** significa "para o expoente" 
+
+"Halsteads entregues Bugs" (B) é uma estimativa para o número de erros na implementação . 
+Bugs entregues em um arquivo devem ser menores que 2. Experiências mostraram que, ao programar com C ou C ++, um arquivo de origem quase sempre contém mais erros do que B sugere. O número de defeitos tende a crescer mais rapidamente que B.
+
+Quando se trata de testes dinâmicos, a métrica Halstead mais importante é o número de erros entregues. O número de erros entregues se aproxima do número de erros em um módulo. Como meta, pelo menos, muitos erros devem ser encontrados no módulo em seus testes.
+
+
+https://www.researchgate.net/publication/221594276_Attribute_Selection_in_Software_Engineering_Datasets_for_Detecting_Fault_Modules
+
+http://www.cc.uah.es/drg/c/RodriguezEtAl_Euromicro07.pdf]
+
+https://pdfs.semanticscholar.org/7925/dcfd68298edf24975199e3cc3226605a58de.pdf
+
+https://www.eecs.qmul.ac.uk/~norman/papers/jss_1999.pdf
+
+https://pdfs.semanticscholar.org/3362/5d48180f32246100182bae1a444f40cbe262.pdf
+
+https://www.ukessays.com/dissertation/full-dissertations/software-defect-prediction.php#_Toc480980934
+
+https://www.verifysoft.com/en_halstead_metrics.html
+
+https://www.ibm.com/support/knowledgecenter/en/SSSHUF_8.0.2/com.ibm.rational.testrt.studio.doc/topics/csmhalstead.htm
+
+https://www.geeksforgeeks.org/software-engineering-halsteads-software-metrics/
