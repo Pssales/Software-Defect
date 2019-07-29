@@ -5,11 +5,6 @@ A COMPLEXIDADE DE DESIGN é uma medida essencial de McCabe. Tal como a COMPLEXID
 A COMPLEXIDADE ESSENCIAL é usada para medir construções não estruturadas. Em outras palavras, mede a “estruturação” da lógica de decisão de um módulo de software. Ele é aplicado em código escrito que começa de 1 a v com base na lógica de decisão não estruturada [58]. É usado para prever o esforço de manutenção que ajuda no processo de modularização [59]. O primeiro módulo do conjunto de dados JM1 contém 3 COMPLEXIDADE DE DESIGN e 1 COMPLEXIDADE ESSENCIAL.
 
 
-
-
-
-
-
 3.1 Duração do programa (N)
 O comprimento do programa (N) é a soma do número total de operadores e operandos no programa: 
         N = N1 + N2
@@ -27,7 +22,6 @@ O volume de Halstead (V) descreve o tamanho da implementação de um algoritmo. 
 O volume de uma função deve ser pelo menos 20 e, no máximo, 1000. O volume de uma função de uma linha sem parâmetros que não é vazia; é cerca de 20. Um volume maior que 1000 indica que a função provavelmente faz muitas coisas.
 
 O volume de um arquivo deve ser de pelo menos 100 e no máximo 8000. Esses limites são baseados em volumes medidos para arquivos com LOCpro e v (G) próximos aos limites recomendados. Os limites de volume podem ser usados ​​para verificação dupla.
-
 
 
 3.4 Nível de dificuldade (D)
